@@ -1,0 +1,45 @@
+/*
+ * Utility classes
+ */
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+}
+
+.flex {
+    display: flex;
+
+    .col {
+        flex: 1;
+        padding-left: $default-spacing;
+        padding-right: $default-spacing;
+        margin-bottom: $default-spacing;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .container {
+        max-width: 600px;
+    }
+    .flex {
+      flex-direction: column;
+    }
+}
+
+.inline { display: inline-block; }
+
+.floatleft { float: left; }
+
+.floatright { float: right; }
+// Hide up/down arrows that normally appear for number fields
+.hide-number-arrows {
+    
+    -moz-appearance: textfield; // Firefox
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none; // Chrome/Safari
+    }
+}

@@ -1,0 +1,22 @@
+/*
+ * Layout and global styles
+ */
+ header {
+    background-color: $brand-orange;
+    padding: $default-spacing 0;
+    text-align: center;
+
+    img { max-height: 50px; }
+}
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 $default-spacing;
+}
+a {
+    color: $brand-orange;
+
+    &:hover {
+        color: darken($brand-orange, 10%);
+    }
+}
