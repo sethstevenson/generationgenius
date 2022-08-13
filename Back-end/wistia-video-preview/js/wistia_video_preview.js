@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
     video.bind("secondchange", function() {
 
         // If the user is not logged in and the video has been watched for more than 60 seconds
-        if ( ! document.body.classList.contains( 'logged-in' ) && video.secondsWatched() >= 3) {
+        if ( ! document.body.classList.contains( 'logged-in' ) && video.secondsWatched() >= 60) {
         video.pause(); // Pause the video
         pausedVideo = video; // Define which video needs to be resumed after logged in
 
